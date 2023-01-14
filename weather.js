@@ -9,12 +9,13 @@ export function getWeather(lat, lon, timezone) {
     }}).then(({data})=>{
         return{
             current: parseCurrentWeather(data),
-            // daily: parseDailyWeather(data),
-            // hourly: parseHourlyWeather(data)
+            daily: parseDailyWeather(data),
+            hourly: parseHourlyWeather(data)
         }
     })
 }
 
+// function to make the weather data more pretty
 function parseCurrentWeather({current_weather, daily}){
     const {
         temperature: currentTemp,
