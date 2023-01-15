@@ -20,7 +20,7 @@ function renderWeather ({current, daily, hourly}){
     renderCurrentWeather(current)
     renderDailyWeather(daily)
     // only allows 12 hours of data, can be changed here
-    renderHourlyWeather(hourly.slice(0, 12))
+    renderHourlyWeather(hourly.slice(0, 18))
     document.body.classList.remove("blurred")
 }
 
