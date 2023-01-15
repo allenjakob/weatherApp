@@ -13,12 +13,12 @@ body{
   margin: 0;
   background-color: lightblue;
   color: darkslategray;
-  font-family: sans-serif;
+  font-family: 'roboto';
 }
 
 .main-header{
   text-align: center;
-
+  font-family: 'lato';
 }
 
 /* HEADER */
@@ -133,4 +133,20 @@ body{
 
 .hour-row > td {
   padding: 0.25rem 0.5rem;
+}
+
+/* FOOTER SECTOIN */
+.stopgap{
+  height: 22px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  color: darkslategray;
+  text-align: center;
+  padding: 2px;
 }

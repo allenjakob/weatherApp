@@ -19,8 +19,8 @@ function positionError(){
 function renderWeather ({current, daily, hourly}){
     renderCurrentWeather(current)
     renderDailyWeather(daily)
-    console.log(hourly)
-    renderHourlyWeather(hourly)
+    // only allows 12 hours of data, can be changed here
+    renderHourlyWeather(hourly.slice(0, 12))
     document.body.classList.remove("blurred")
 }
 
