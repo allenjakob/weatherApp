@@ -15,10 +15,19 @@ body{
   color: darkslategray;
   font-family: sans-serif;
 }
+
+.main-header{
+  text-align: center;
+
+}
+
 /* HEADER */
 .header{
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .header-left{
@@ -75,6 +84,9 @@ body{
 }
 
 /* DAYS SECTION */
+.day-header{
+  text-align: center;
+}
 
 .day-section{
   display: grid;
@@ -83,6 +95,7 @@ body{
   justify-content: center;
   padding: 1rem;
 }
+
 
 .day-card{
   display: flex;
@@ -99,6 +112,10 @@ body{
 }
 
 /* HOURS SECTIONS */
+.hour-header{
+  text-align: center;
+}
+
 .hour-section{
   width: 100%;
   text-align: center;
